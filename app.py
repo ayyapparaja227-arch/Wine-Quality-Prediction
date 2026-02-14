@@ -319,25 +319,23 @@ def create_rmse_bar_chart(rmse_scores, n_splits):
     )
     
     fig.update_layout(
-        title=dict(
-            text=f'RMSE per Fold ({n_splits}-Fold Cross-Validation)',
-            font=dict(size=20, color='#1a1a1a', family='Inter')
-        ),
-        xaxis=dict(
-            title='Fold',
-            gridcolor='rgba(138, 43, 226, 0.15)',
-            titlefont=dict(size=14, color='#1a1a1a'),
-            tickfont=dict(size=12, color='#000000')
-        ),
-        yaxis=dict(
-            title='RMSE',
-            gridcolor='rgba(138, 43, 226, 0.15)',
-            titlefont=dict(size=14, color='#1a1a1a'),
-            tickfont=dict(size=12, color='#000000')
-        ),
+        title={
+            'text': f'RMSE per Fold ({n_splits}-Fold Cross-Validation)',
+            'font': {'size': 20, 'color': '#1a1a1a', 'family': 'Inter'}
+        },
+        xaxis={
+            'title': {'text': 'Fold', 'font': {'size': 14, 'color': '#1a1a1a'}},
+            'gridcolor': 'rgba(138, 43, 226, 0.15)',
+            'tickfont': {'size': 12, 'color': '#000000'}
+        },
+        yaxis={
+            'title': {'text': 'RMSE', 'font': {'size': 14, 'color': '#1a1a1a'}},
+            'gridcolor': 'rgba(138, 43, 226, 0.15)',
+            'tickfont': {'size': 12, 'color': '#000000'}
+        },
         plot_bgcolor='rgba(255, 255, 255, 0.5)',
         paper_bgcolor='rgba(255, 255, 255, 0)',
-        font=dict(color='#1a1a1a', family='Inter', size=12),
+        font={'color': '#1a1a1a', 'family': 'Inter', 'size': 12},
         height=400
     )
     
@@ -368,23 +366,22 @@ def create_feature_importance_chart(model, feature_names):
     ))
     
     fig.update_layout(
-        title=dict(
-            text='Feature Coefficients',
-            font=dict(size=20, color='#1a1a1a', family='Inter')
-        ),
-        xaxis=dict(
-            title='Coefficient Value',
-            gridcolor='rgba(138, 43, 226, 0.15)',
-            titlefont=dict(size=14, color='#1a1a1a'),
-            tickfont=dict(size=12, color='#000000')
-        ),
-        yaxis=dict(
-            gridcolor='rgba(138, 43, 226, 0.15)',
-            tickfont=dict(size=12, color='#000000')
-        ),
+        title={
+            'text': 'Feature Coefficients',
+            'font': {'size': 20, 'color': '#1a1a1a', 'family': 'Inter'}
+        },
+        xaxis={
+            'title': {'text': 'Coefficient Value', 'font': {'size': 14, 'color': '#1a1a1a'}},
+            'gridcolor': 'rgba(138, 43, 226, 0.15)',
+            'tickfont': {'size': 12, 'color': '#000000'}
+        },
+        yaxis={
+            'gridcolor': 'rgba(138, 43, 226, 0.15)',
+            'tickfont': {'size': 12, 'color': '#000000'}
+        },
         plot_bgcolor='rgba(255, 255, 255, 0.5)',
         paper_bgcolor='rgba(255, 255, 255, 0)',
-        font=dict(color='#1a1a1a', family='Inter', size=12),
+        font={'color': '#1a1a1a', 'family': 'Inter', 'size': 12},
         height=500
     )
     
@@ -403,22 +400,21 @@ def create_distribution_chart(rmse_scores):
     ))
     
     fig.update_layout(
-        title=dict(
-            text='RMSE Score Distribution',
-            font=dict(size=20, color='#1a1a1a', family='Inter')
-        ),
-        xaxis=dict(
-            tickfont=dict(size=12, color='#000000')
-        ),
-        yaxis=dict(
-            title='RMSE',
-            gridcolor='rgba(138, 43, 226, 0.15)',
-            titlefont=dict(size=14, color='#1a1a1a'),
-            tickfont=dict(size=12, color='#000000')
-        ),
+        title={
+            'text': 'RMSE Score Distribution',
+            'font': {'size': 20, 'color': '#1a1a1a', 'family': 'Inter'}
+        },
+        xaxis={
+            'tickfont': {'size': 12, 'color': '#000000'}
+        },
+        yaxis={
+            'title': {'text': 'RMSE', 'font': {'size': 14, 'color': '#1a1a1a'}},
+            'gridcolor': 'rgba(138, 43, 226, 0.15)',
+            'tickfont': {'size': 12, 'color': '#000000'}
+        },
         plot_bgcolor='rgba(255, 255, 255, 0.5)',
         paper_bgcolor='rgba(255, 255, 255, 0)',
-        font=dict(color='#1a1a1a', family='Inter', size=12),
+        font={'color': '#1a1a1a', 'family': 'Inter', 'size': 12},
         showlegend=False,
         height=400
     )
