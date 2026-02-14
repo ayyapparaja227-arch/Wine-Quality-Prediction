@@ -326,14 +326,12 @@ def create_rmse_bar_chart(rmse_scores, n_splits):
         xaxis=dict(
             title='Fold',
             gridcolor='rgba(138, 43, 226, 0.15)',
-            color='#1a1a1a',
             titlefont=dict(size=14, color='#1a1a1a'),
             tickfont=dict(size=12, color='#000000')
         ),
         yaxis=dict(
             title='RMSE',
             gridcolor='rgba(138, 43, 226, 0.15)',
-            color='#1a1a1a',
             titlefont=dict(size=14, color='#1a1a1a'),
             tickfont=dict(size=12, color='#000000')
         ),
@@ -377,13 +375,11 @@ def create_feature_importance_chart(model, feature_names):
         xaxis=dict(
             title='Coefficient Value',
             gridcolor='rgba(138, 43, 226, 0.15)',
-            color='#1a1a1a',
             titlefont=dict(size=14, color='#1a1a1a'),
             tickfont=dict(size=12, color='#000000')
         ),
         yaxis=dict(
             gridcolor='rgba(138, 43, 226, 0.15)',
-            color='#1a1a1a',
             tickfont=dict(size=12, color='#000000')
         ),
         plot_bgcolor='rgba(255, 255, 255, 0.5)',
@@ -417,7 +413,6 @@ def create_distribution_chart(rmse_scores):
         yaxis=dict(
             title='RMSE',
             gridcolor='rgba(138, 43, 226, 0.15)',
-            color='#1a1a1a',
             titlefont=dict(size=14, color='#1a1a1a'),
             tickfont=dict(size=12, color='#000000')
         ),
